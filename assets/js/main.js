@@ -22,10 +22,18 @@ if(favoriteMusic.length > 5) {
     "Preencha todos os valores corretamente!"
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação. */
 
-var countries = 38;
-var states = 'dezessete';
-var cities = 74;
+var x = 38;
+var y = 17;
+var z = 74;
 
-const world = (countries, states, cities) => {
-    
+const world = (x, y, z) => {
+    if(x === 38 && y === 17 && z === 74) {
+        console.log('tudo está correto!!!');
+    } else {
+        console.log('Preencha todos os valores corretamente!');
+    }
+
+    return (x*y*z) + 2;
 };
+
+console.log(world(38, 0.17, 74));
